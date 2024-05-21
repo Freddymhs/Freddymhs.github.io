@@ -1,16 +1,15 @@
-import { defineConfig } from "astro/config";
-import { HOME_PAGE } from "./src/consts";
-import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+import { defineConfig } from "astro/config";
 
+import mdx from "@astrojs/mdx";
 import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
+import { HOME_PAGE, URL_SITE } from "./src/consts";
+
 export default defineConfig({
-  site: "https://freddymhs-github-io.vercel.app",
   integrations: [mdx(), sitemap(), tailwind()],
+  site: URL_SITE,
   redirects: {
-    // "/": { HOME_PAGE },
-    "/": "/about_me",
+    "/": HOME_PAGE,
   },
 });
