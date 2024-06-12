@@ -17,7 +17,7 @@ console.log(currentPath);
   </head>
 
   <body>
-    <div class="html-background">
+    <div class={currentPath !== "/blog" ? "html-background" : ""}>
       {
         currentPath !== "/blog" && (
           <header>

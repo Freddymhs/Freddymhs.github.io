@@ -136,9 +136,16 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"first-post.md": {
-	id: "first-post.md";
-  slug: "first-post";
+"create-shortcut-linux.md": {
+	id: "create-shortcut-linux.md";
+  slug: "create-shortcut-linux";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"google-login-flutter-app.md": {
+	id: "google-login-flutter-app.md";
+  slug: "google-login-flutter-app";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -150,6 +157,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"tutorial-mdx copy.mdx": {
+	id: "tutorial-mdx copy.mdx";
+  slug: "tutorial-mdx-copy";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "tutorial-mdx.mdx": {
 	id: "tutorial-mdx.mdx";
   slug: "tutorial-mdx";
