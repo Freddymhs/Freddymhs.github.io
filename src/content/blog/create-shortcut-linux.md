@@ -1,8 +1,8 @@
 ---
-title: "agregar una acceso directo a la seccion de Apps en Zorin OS"
+title: "agregar un acceso directo a la seccion de Apps en Zorin OS"
 description: "Guía para crear un acceso directo de Android Studio en Zorin OS"
 pubDate: "May 14 2024"
-heroImage: "/blog-placeholder-2.jpg"
+heroImage: "../../../public/skills-svg/zorin-icon.svg"
 ---
 
 ### Paso 1: Crear el archivo de acceso directo
