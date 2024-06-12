@@ -5,6 +5,9 @@ import BaseHead from "../components/atomic/atoms/BaseHead.astro";
 import Header from "../components/atomic/molecules/Header.astro";
 import Top from "../components/atomic/molecules/Top.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+const currentPath = Astro.url.pathname;
+console.log(currentPath);
 ---
 
 <html lang="en">
@@ -12,11 +15,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <ViewTransitions />
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
+
   <body>
     <div class="html-background">
-      <header>
-        <Top />
-      </header>
+      {
+        currentPath !== "/blog" && (
+          <header>
+            <Top />
+          </header>
+        )
+      }
       <main>
         <slot />
       </main>
