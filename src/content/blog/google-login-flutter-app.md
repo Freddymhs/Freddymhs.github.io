@@ -2,7 +2,7 @@
 title: "Login de google en Flutter Multiplataforma"
 description: "adding login into a flutter project"
 pubDate: "jun 12 20254"
-heroImage: "../../../public/skills-svg/flutter-svgrepo-com.svg"
+heroImage: "./skills-svg/flutter.svg"
 ---
 
 

@@ -2,7 +2,7 @@
 title: 'Usando Markdown'
 description: 'Using MD'
 pubDate: 'Jun 12 2024'
-heroImage: "/blog-placeholder-1.jpeg"
+heroImage: "./blog-placeholder-about.jpg" 
 ---
 
 # Markdown syntax guide

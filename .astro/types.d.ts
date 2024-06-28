@@ -157,20 +157,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"tutorial-mdx copy.mdx": {
-	id: "tutorial-mdx copy.mdx";
-  slug: "tutorial-mdx-copy";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"tutorial-mdx.mdx": {
-	id: "tutorial-mdx.mdx";
-  slug: "tutorial-mdx";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
 };
 
 	};

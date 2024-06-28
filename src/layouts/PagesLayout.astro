@@ -6,7 +6,7 @@ import Header from "../components/atomic/molecules/Header.astro";
 import Top from "../components/atomic/molecules/Top.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
-const currentPath = Astro.url.pathname;
+const currentPath = Astro.url.pathname.includes("blog");
 console.log(currentPath);
 ---
 
@@ -17,9 +17,9 @@ console.log(currentPath);
   </head>
 
   <body>
-    <div class={currentPath !== "/blog" ? "html-background" : ""}>
+    <div class={!currentPath ? "html-background" : ""}>
       {
-        currentPath !== "/blog" && (
+        !currentPath && (
           <header>
             <Top />
           </header>
